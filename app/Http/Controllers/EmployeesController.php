@@ -17,6 +17,8 @@ class EmployeesController extends Controller
     public function index()
     {
         //
+        $employee = Employee::all();
+        return view('/api/employees', 'EmployeesController@index');
     }
 
     /**
