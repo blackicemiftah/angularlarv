@@ -18,7 +18,8 @@ class EmployeesController extends Controller
     {
         //
         $employee = Employee::all();
-        return view('/api/employees', 'EmployeesController@index');
+        return view('/api/employees/all', compact($employees));
+        
     }
 
     /**
